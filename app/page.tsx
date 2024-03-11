@@ -1,7 +1,6 @@
 "use client"
 
 import AutocompleteAddress from "@/components/AutocompleteAddress";
-import MapboxMap from "@/components/Map/MapBoxMap";
 import MapContainer from "@/components/Map/MapContainer";
 import ResultsContainer from "@/components/ResultsContainer";
 import { Suggestion } from "@/types/mapboxFetch";
@@ -16,7 +15,6 @@ export default function Page() {
       <AutocompleteAddress setResults={setResults} />
       <ResultsContainer results={results} />
       <MapContainer />
-      {/* <MapboxMap /> */}
     </div>
   )
 }
